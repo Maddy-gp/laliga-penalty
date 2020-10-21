@@ -2,34 +2,48 @@
 <html lang="en">
     <head>
         <title>Laliga-Penalty-shootout</title>
+     <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class=container>
-            <div class="1row">
-                <div class="1col">
-                    <img src="images/Real_Madrid_CF.svg.png" width="100" height="100" alt="RealMadrid">
-                    <ol>0</ol>
-                    <ol>1</ol>
-                    <ol>1</ol>
-                    <ol>0</ol>
-                    <ol>1</ol> 
+            <div class="row">
+                <div class="col">
+                    <img class="teamimg" src="images/Real_Madrid_CF.svg.png" width="120" height="120" alt="RealMadrid">
+                <span class="name" id="team-1-name">Real Madrid</span>
+                <div class="row penalty" id="t1penalty" >                   
+                    <span class="col circle"></span>
+                    <span class="col circle"></span>
+                    <span class="col circle"></span>
+                    <span class="col circle"></span>
+                    <span class="col circle"></span> 
                 </div>
-                <div class="2col">
-                    <span>3</span>
-                    <span>-</span> 
-                    <span>3</span>  
-                </div>
-                <div class="3col">
-                    <img src="images/S_D_Huesca.svg.png" width="100" height="100" alt="S_D_Huesca">
-                    <ol>1</ol>
-                    <ol>1</ol>
-                    <ol>1</ol>
-                    <ol>0</ol>
-                    <ol>0</ol>   
-                </div>
-            <div class = "2row">
-                <button >TryAgain</button>
             </div>
+                <div class="col">
+                    <div class="row points">
+                        <span id="team1points">0</span>
+                        <span>-</span> 
+                        <span id="team2points">0</span>   
+                    </div>
+                </div>
+                <div class="col">
+                    <img class="teamimg" src="images/S_D_Huesca.svg.png" width="120" height="120" alt="S_D_Huesca">
+                <span class="name" id="team-2-name">S.D. Huesca</span>
+                <div class="row penalty" id="t2penalty">
+                    <span class="col circle"></span>
+                    <span class="col circle"></span>
+                    <span class="col circle"></span>
+                    <span class="col circle"></span>
+                    <span class="col circle"></span>  
+                </div> 
+                </div>
+
+            </div>
+            <div>
+                <button id="strike-button" >Try Again</button> 
+                <button id="strike-button" >Huesca Strike</button> 
+            </div>       
+        </div>     
+             
     </body>
 </html>
 
